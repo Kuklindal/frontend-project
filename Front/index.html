@@ -1,19 +1,124 @@
+
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Finsweet — Home</title>
 
-    <style media="(prefers-color-scheme: light)">
-      @import url('./src/styles/colors/light.css');
-    </style>
-    <style media="(prefers-color-scheme: dark)">
-      @import url('./src/styles/colors/dark.css');
-    </style>
+
   </head>
-  <body>
+  <body class="page">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="/" aria-label="Finsweet home">
+          <img src="/public/vite.svg" alt="" class="header__logo-img" />
+          <span class="header__logo-text">Finsweet</span>
+        </a>
+
+        <nav class="header__nav nav" aria-label="Главное меню">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link nav__link--active" href="#">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>            
+            <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="header__action">
+          <button type="button" class="button button--light">Subscribe</button>
+        </div>
+        <button class="header__theme button button--ghost" id="themeToggle" aria-label="Сменить тему">
+          🌙
+        </button>
+        <!-- <button class="header__burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button> -->
+      </div>
+
+      <!-- Мобильное меню -->
+      <nav class="header__mobile mobile-nav" id="mobileMenu" hidden>
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Home</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">About</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Services</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Blog</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">We help you grow your business</h1>
+            <p class="hero__text">
+              Короткий подзаголовок из макета: чем вы помогаете клиенту и какую ценность даёте.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary hero__button" href="#cta">Get Started</a>
+              <a class="button button--secondary hero__button" href="#services">Learn More</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <!-- картинка/иллюстрация из макета -->
+            <img class="hero__img" src="/public/hero-placeholder.webp" alt="Hero illustration" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features / Services -->
+      <section class="features" id="services">
+        <div class="container features__inner">
+          <h2 class="section-title features__title">Our Services</h2>
+          <ul class="features__list">
+            <li class="features__item feature-card">
+              <div class="feature-card__icon" aria-hidden="true">💡</div>
+              <h3 class="feature-card__title">Strategy</h3>
+              <p class="feature-card__text">Описание услуги из макета на 1–2 строки.</p>
+            </li>
+            <li class="features__item feature-card">
+              <div class="feature-card__icon" aria-hidden="true">🚀</div>
+              <h3 class="feature-card__title">Marketing</h3>
+              <p class="feature-card__text">Описание услуги из макета на 1–2 строки.</p>
+            </li>
+            <li class="features__item feature-card">
+              <div class="feature-card__icon" aria-hidden="true">📈</div>
+              <h3 class="feature-card__title">Analytics</h3>
+              <p class="feature-card__text">Описание услуги из макета на 1–2 строки.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" id="cta">
+        <div class="container cta__inner">
+          <h2 class="cta__title">Ready to start?</h2>
+          <a class="button button--primary cta__button" href="#contact">Contact us</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">© 2025 Finsweet</div>
+        <ul class="footer__links">
+          <li class="footer__item"><a class="footer__link" href="#">Privacy</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Точка входа Vite -->
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>

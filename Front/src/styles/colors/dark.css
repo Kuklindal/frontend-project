@@ -1,6 +1,19 @@
-:root {
+html[data-theme="dark"] {
   color-scheme: dark;
 
-  --color-primary: var(--color-black);
-  --color-secondary: var(--color-white);
+  --bg: var(--color-black);
+  --text: var(--slate-300);
+
+  --header-bg: #0f172a;
+  --header-fg: #e5e7eb;
+  --header-link: var(--slate-300);
+  --header-link-active: var(--color-white);
+  --header-border: #1f2937;
+  --header-shadow: 0 1px 0 #1f2937;
+  --header-shadow: 0 2px 8px rgba(0,0,0,.35);
+  --header-backdrop: saturate(160%) blur(6px);
+  
+  --header-btn-bg: var(--color-white);
+  --header-btn-fg: #0f172a;
+  --header-btn-border: transparent;
 }

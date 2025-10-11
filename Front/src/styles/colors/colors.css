@@ -1,4 +1,13 @@
 :root {
-  --color-white: #e3e3e3;
-  --color-black: #1d1d1d;
+  --color-white: #ffffff;
+  --color-black: #0b0f1a;
+
+  --slate-50:  #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e5e7eb;
+  --slate-300: #cbd5e1;
+  --slate-800: #1f2937;
+  --slate-900: #0f172a;
+
+  --indigo-900: #23283B;
 }
