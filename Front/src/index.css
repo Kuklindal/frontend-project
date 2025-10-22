@@ -5,6 +5,9 @@
 @import './styles/components/container.css';
 @import './styles/colors/light.css';
 @import './styles/colors/dark.css';
+@import './styles/blocks/footer.css';
+@import './styles/blocks/posts.css';
+@import './styles/blocks/hero.css';
 
 ul, ol { margin: 0; padding: 0; list-style: none; }
 :root {

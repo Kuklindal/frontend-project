@@ -1,0 +1,272 @@
+.footer {
+    background: var(--footer-bg);
+    color: var(--footer-fg);
+    padding: 64px 0 48px;            /* как в макете: воздуха сверху/снизу */
+  }
+  
+  /* ===== Верхняя зона ===== */
+  .footer__top {
+    display: grid;
+    grid-template-rows: auto auto;   /* 1) head, 2) card */
+    gap: 32px;                       /* расстояние между head и карточкой */
+  }
+  
+  /* Ряд 1: логотип слева, меню справа, по одной линии */
+  .footer__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  
+  .footer__logo-text {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--footer-fg);
+  }
+  
+  .footer__menu {
+    display: flex;
+    gap: 28px;                       /* в макете ссылки «дышат» */
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__menu-link {
+    color: var(--footer-muted);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .footer__menu-link:hover { color: var(--footer-fg); }
+  
+  /* Ряд 2: карточка подписки — на всю ширину контейнера */
+  .newsletter-card {
+    grid-column: 1 / -1;             /* растянем на всю сетку */
+    background: rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 48px;                    /* как в шаблоне — крупные внутренние отступы */
+  }
+  .newsletter-card__title {
+    margin: 0 0 24px;
+    font-weight: 700;
+    font-size: 32px;                  /* крупнее текста вокруг */
+    line-height: 1.35;
+    letter-spacing: 0.2px;
+  }
+  .newsletter-card__form {
+    display: grid;
+    grid-template-columns: 1fr 180px; /* поле + жёлтая кнопка справа */
+    gap: 16px;
+  }
+  .newsletter-card__input {
+    height: 56px;
+    padding: 0 18px;
+    background: var(--footer-input-bg);
+    color: var(--footer-input-fg);
+    border: 1px solid var(--footer-input-border);
+    border-radius: 6px;
+    outline: none;
+  }
+  .newsletter-card__input::placeholder { opacity: .7; }
+  .newsletter-card__btn {
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    background: #FFD050;
+    color: #232536;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .newsletter-card__btn:hover { filter: brightness(.95); }
+  
+  /* ===== Низ ===== */
+  .footer__bottom {
+    margin-top: 40px;
+    border-top: 1px solid var(--footer-sep);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .footer__info p {
+    margin: 6px 0;
+    color: var(--footer-muted);
+    font-size: 16px;
+  }
+  .social { display: flex; gap: 16px; }
+  .social__link {
+    color: var(--footer-muted);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .social__link:hover { color: var(--footer-fg); }
+  
+  /* ===== Адаптив ===== */
+  @media (max-width: 1024px) {
+    .newsletter-card { padding: 36px; }
+    .newsletter-card__title { font-size: 28px; }
+  }
+  @media (max-width: 640px) {
+    .footer__head { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .newsletter-card__form { grid-template-columns: 1fr; }
+    .newsletter-card__btn { width: 100%; }
+  }
+
+  .newsletter-card {
+    width: 90%;              /* было: 100% — теперь уже на 10% */
+    margin-inline: auto;     /* центрируем внутри контейнера */
+    background: rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 48px;
+  }
+
+  /* общий грид внутри карточки */
+.newsletter-card__grid {
+    display: grid;
+    grid-template-columns: 1fr 420px;  /* слева текст, справа форма */
+    align-items: center;
+    column-gap: 24px;
+  }
+  
+  /* заголовок в две строки — ограничим ширину */
+  .newsletter-card__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.35;
+    max-width: 760px;   /* узкая колонка, почти всегда даст 2 строки как в макете */
+  }
+  
+  /* форма — поле + кнопка в одну строку справа */
+  .newsletter-card__form {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 16px;
+    padding-right: 16px;   /* ← добавили лёгкий внутренний отступ справа */
+  }
+  
+  .newsletter-card__input {
+    height: 56px;
+    padding: 0 18px;
+    background: var(--footer-input-bg);
+    color: var(--footer-input-fg);
+    border: 1px solid var(--footer-input-border);
+    border-radius: 6px;
+  }
+  .newsletter-card__btn {
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    background: #FFD050;
+    color: #232536;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .newsletter-card__btn:hover { filter: brightness(.95); }
+
+  .social { display: flex; gap: 18px; }
+.social__link { display: inline-flex; opacity: .85; }
+.social__link:hover { opacity: 1; }
+.social__icon { width: 20px; height: 20px; fill: var(--footer-muted); }
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--footer-icon);
+    transition: fill .2s;
+  }
+  
+  .social__link:hover .social__icon {
+    fill: #FFD050;          /* при наведении — жёлтый акцент */
+  }
+
+@media (max-width: 1024px) {
+    .newsletter-card { width: 100%; padding: 36px; }
+    .newsletter-card__grid {
+      grid-template-columns: 1fr;   /* стекаем в колонку */
+      row-gap: 20px;
+    }
+    .newsletter-card__title { max-width: none; font-size: 28px; }
+  }
+  @media (max-width: 560px) {
+    .newsletter-card__form { grid-template-columns: 1fr; }
+    .newsletter-card__btn { width: 100%; }
+  }
+
+  .footer .newsletter-card{
+    width: 90%;
+    margin-inline: auto;
+    background: rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 48px 64px;  /* ← правый/левый паддинг больше */
+    box-sizing: border-box;
+  }
+  
+  /* грид: заголовок слева, форма справа */
+  .footer .newsletter-card__grid{
+    display: grid;
+    grid-template-columns: 1fr 420px;  /* текст | форма */
+    align-items: center;
+    column-gap: 24px;
+  }
+  
+  /* заголовок в две строки за счёт ограничения ширины */
+  .footer .newsletter-card__title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.35;
+    max-width: 760px;
+  }
+  
+  /* форма: поле + кнопка; небольшой правый паддинг, чтобы кнопка отлипла от края */
+  .footer .newsletter-card__form{
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 16px;
+    padding-right: 16px;
+  }
+  
+  .footer .newsletter-card__input{
+    height: 56px;
+    padding: 0 18px;
+    background: var(--footer-input-bg);
+    color: var(--footer-input-fg);
+    border: 1px solid var(--footer-input-border);
+    border-radius: 6px;
+  }
+  
+  .footer .newsletter-card__btn{
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    background: #FFD050;
+    color: #232536;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .footer .newsletter-card__btn:hover{ filter: brightness(.95); }
+  
+  /* соц-иконки видимые в тёмной теме */
+  .footer .social__icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--footer-icon);
+    transition: fill .2s, opacity .2s;
+  }
+  .footer .social__link:hover .social__icon{ fill: #FFD050; }
+  
+  /* адаптив */
+  @media (max-width: 1024px){
+    .footer .newsletter-card{ width: 100%; padding: 36px; }
+    .footer .newsletter-card__grid{ grid-template-columns: 1fr; row-gap: 20px; }
+    .footer .newsletter-card__title{ max-width: none; font-size: 28px; }
+  }
+  @media (max-width: 560px){
+    .footer .newsletter-card__form{ grid-template-columns: 1fr; }
+    .footer .newsletter-card__btn{ width: 100%; }
+  }

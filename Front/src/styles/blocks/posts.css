@@ -1,0 +1,119 @@
+/* ===== Featured / All Posts ===== */
+.posts { padding: 72px 0; }
+
+.posts__grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;  /* как в макете: левая колонка шире */
+  gap: 48px;
+}
+
+/* заголовки колонок */
+.posts__title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 16px;
+  color: var(--text);
+}
+
+/* ===== Featured (левая карточка) ===== */
+.featured {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.featured__img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.featured__body {
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.featured__meta {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.featured__heading {
+  margin: 0;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.featured__desc {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.featured__btn { justify-self: start; margin-top: 6px; }
+
+/* ===== All Posts (правая колонка) ===== */
+.posts__list-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.posts__view-all {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.allposts {
+  display: grid;
+  gap: 16px;
+}
+
+.allposts__item {
+  border-bottom: 1px solid var(--card-border);
+  padding: 14px 0 16px;
+}
+
+.allposts__item:last-child { border-bottom: none; }
+
+.allposts__link {
+  display: grid;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.allposts__meta {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.allposts__text {
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* светлая плашка у одного из пунктов (как на макете) */
+.allposts__item--highlight {
+  background: var(--pill-bg);
+  border-radius: 6px;
+  padding: 14px 12px;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 1100px) {
+  .posts__grid { grid-template-columns: 1fr; }
+  .featured__img { height: 220px; }
+}
