@@ -1,0 +1,14 @@
+.nav__list {
+  display: flex;
+  gap: 30px;        /* интервалы между пунктами, как в макете */   /* НИКАКИХ padding-inline здесь не нужно */
+  list-style: none;
+}
+.nav__link {
+  color: var(--header-text);            
+  font-size: 18px;
+  line-height: 1.33;
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+.nav__link:hover { opacity: .85; }
+.nav__link--active { color: var(--header-text-active); }

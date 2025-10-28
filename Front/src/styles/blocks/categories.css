@@ -1,0 +1,15 @@
+.categories {
+  padding-block: 72px;
+}
+
+.categories__title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--cat-title);
+  padding-inline: 16px;
+  margin-bottom: 40px; /* только внутренние отступы секции; наружных margin нет */
+}
+

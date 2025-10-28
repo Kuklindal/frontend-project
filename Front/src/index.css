@@ -1,95 +1,28 @@
 @import './styles/global/media.css';
 @import './styles/colors/colors.css';
-@import './styles/normalize.css';
-@import './styles/global/utility.css';
-@import './styles/components/container.css';
 @import './styles/colors/light.css';
 @import './styles/colors/dark.css';
+@import './styles/colors/always-dark.css'; 
+
+@import './styles/normalize.css';
+@import './styles/components/container.css';
+@import './styles/global/utility.css';
+
+@import './styles/blocks/button.css';
+@import './styles/blocks/nav.css';
+@import './styles/blocks/featured.css';
+@import './styles/blocks/allposts.css';
+@import './styles/blocks/newsletter-card.css';
+@import './styles/blocks/social.css';
+@import './styles/blocks/cat-card.css';
+
 @import './styles/blocks/footer.css';
 @import './styles/blocks/posts.css';
 @import './styles/blocks/hero.css';
-
-ul, ol { margin: 0; padding: 0; list-style: none; }
-:root {
-  --font-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-head: "Sen", var(--font-base); 
-}
-body {
-  font: 400 1rem/1.6 var(--font-base); 
-  background: var(--bg); color: var(--text);
-}
-.container {
-  max-width: 1800px;           /* В фигме стоит 1440px норм ли что подставил визуально под свой экран */
-  margin-inline: auto;
-  padding-inline: 24px;
-}
+@import './styles/blocks/header.css';
+@import './styles/blocks/about.css';
+@import './styles/blocks/categories.css';
 
 
-.header{
-  margin: 0;             
-  border-radius: 0;       
-  background: var(--header-bg);   
-  box-shadow: var(--header-shadow);
-  border-bottom: 1px solid var(--header-border);
-  transition: background-color .2s, color .2s, border-color .2s, box-shadow .2s;
-}
-/* внутренняя линия шапки */
-.header__inner {
-  height: 72px;                 /* фиксированная высота как в макете */
-  display: flex;
-  align-items: center;          /* вертикальное выравнивание */
-  justify-content: space-between;
-  gap: 24px;
-}
-
-/* логотип слева */
-.header__logo-text{
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--header-fg);
-}
-.header__logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* меню справа */
-.header__nav { 
-    display: block;
-    margin-left: auto;}        
-.nav__list {
-  display: flex;                
-  align-items: center;
-  gap: 24px;                   
-}
-.nav__link {
-  color: var(--header-text);            
-  font-size: 18px;
-  line-height: 1.33;
-  text-decoration: none;
-  transition: opacity .2s ease;
-}
-.nav__link:hover { opacity: .85; }
-.nav__link--active { color: var(--header-text-active); }
 
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 44px;
-  padding: 0 20px;
-  border-radius: 6px;
-  border: 1px solid rgba(255,255,255,.2);
-  font-weight: 600;
-}
-.header .button.button--light {
-  background: var(--header-btn-bg);
-  color: var(--header-btn-fg);
-  border: 1px solid var(--header-btn-border);
-}
-.button--ghost{
-    margin-left: 12px;
-}

@@ -1,0 +1,29 @@
+.allposts {
+  display: grid;
+  gap: 16px;
+}
+
+.allposts__item {
+  border-bottom: 1px solid var(--card-border);
+  padding: 14px 0 16px;
+}
+
+.allposts__item:last-child { border-bottom: none; }
+
+.allposts__link {
+  display: grid;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.allposts__meta {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.allposts__text {
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.4;
+}
+

@@ -1,0 +1,43 @@
+/* ===== Header & Footer всегда тёмные ===== */
+
+.header,
+.footer {
+  --header-bg: #0f172a;
+  --header-fg: #e5e7eb;
+  --header-link: #cbd5e1;
+  --header-link-active: #ffffff;
+  --header-border: #1f2937;
+  --header-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+
+  --header-btn-bg: #ffffff;
+  --header-btn-fg: #0f172a;
+  --header-btn-border: transparent;
+
+  --footer-bg: #0f172a;
+  --footer-fg: #e5e7eb;
+  --footer-border: #1f2937;
+}
+
+/* Гарантируем тёмный фон */
+.header {
+  background: var(--header-bg);
+  color: var(--header-fg);
+  border-bottom: 1px solid var(--header-border);
+}
+.header .nav__link {
+  color: var(--header-link);
+}
+.header .nav__link--active {
+  color: var(--header-link-active);
+}
+.header .button--light {
+  background: var(--header-btn-bg);
+  color: var(--header-btn-fg);
+  border-color: var(--header-btn-border);
+}
+
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-fg);
+  border-top: 1px solid var(--footer-border);
+}

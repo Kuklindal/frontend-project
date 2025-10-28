@@ -16,4 +16,11 @@ html[data-theme="dark"] {
   --header-btn-bg: var(--color-white);
   --header-btn-fg: #0f172a;
   --header-btn-border: transparent;
+  --about-bg: var(--about-bg-dark);
+    /* токены для блока */
+  --cat-bg: var(--cat-bg-dark);
+  --cat-border: var(--cat-border-dark);
+  --cat-border-hover: var(--cat-border-hover-dark);
+  --cat-title: var(--cat-title-dark);
+  --cat-text: var(--cat-text-dark);
 }

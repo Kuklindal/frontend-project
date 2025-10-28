@@ -3,15 +3,11 @@ html[data-theme="light"] {
 
   --bg: var(--color-white);
   --text: var(--slate-900);
-
-  --header-bg: var(--color-white);
-  --header-fg: #111827;
-  --header-link: var(--slate-800);
-  --header-link-active: var(--slate-900);
-  --header-border: #e5e7eb;
-  --header-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-
-  --header-btn-bg: #e5e7eb;
-  --header-btn-fg: #111827;
-  --header-btn-border: var(--slate-300);
+  --about-bg: var(--about-bg-light);
+    /* токены для блока */
+  --cat-bg: var(--cat-bg-light);
+  --cat-border: var(--cat-border-light);
+  --cat-border-hover: var(--cat-border-hover-light);
+  --cat-title: var(--cat-title-light);
+  --cat-text: var(--cat-text-light);
 }

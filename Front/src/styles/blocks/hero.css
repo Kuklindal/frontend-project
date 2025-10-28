@@ -101,7 +101,7 @@
     font-weight: 700;
   }
   
-  /* адаптив */
+  /* адаптив
   @media (max-width: 1024px) {
     .hero { min-height: 520px; }
     .hero__inner { padding-top: 64px; padding-bottom: 64px; }
@@ -111,7 +111,7 @@
     .hero { min-height: 480px; }
     .hero__inner { padding-top: 44px; padding-bottom: 44px; gap: 16px; }
     .hero__title { font-size: clamp(28px, 8vw, 38px); }
-  }
+  } */
 
   /* чтобы все элементы в hero не растягивались по ширине */
 .hero__inner {

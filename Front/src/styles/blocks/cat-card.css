@@ -1,0 +1,83 @@
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  padding-inline: 24px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.cat-card {
+  background: var(--cat-bg);
+  border: 1px solid var(--cat-border);
+  border-radius: 12px;
+  padding: 28px;
+  box-sizing: border-box;
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background .16s ease;
+}
+
+.cat-card:hover,
+.cat-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border-color: var(--cat-border-hover);
+}
+
+.cat-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--cat-icon-bg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.cat-card__icon img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.cat-card__title {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--cat-title);
+  margin-bottom: 10px;
+}
+
+.cat-card__text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--cat-text);
+}
+
+/* Активная карточка (жёлтая) */
+.cat-card--active {
+  background: var(--cat-accent);
+  border-color: var(--cat-accent);
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+}
+
+.cat-card--active .cat-card__title,
+.cat-card--active .cat-card__text {
+  color: var(--cat-accent-text);
+}
+
+.cat-card--active .cat-card__icon {
+  background: var(--cat-icon-bg-accent);
+}
+
+.cat-card--business .cat-card__icon {
+   background: #FFE7A3;   /* мягкий жёлто-бежевый */
+}
+.cat-card--startup .cat-card__icon {
+  background: #FFE7A3;   /* тёплый пастельный янтарный */
+}
+.cat-card--economy .cat-card__icon {
+   background: #FFE7A3;   /* голубовато-серый */
+}
+.cat-card--tech .cat-card__icon {
+   background: #FFE7A3;   /* фиолетово-белый */
+}
