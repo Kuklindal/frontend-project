@@ -22,6 +22,11 @@
 @import './styles/blocks/header.css';
 @import './styles/blocks/about.css';
 @import './styles/blocks/categories.css';
+@import './styles/blocks/why.css';
+@import './styles/blocks/authors.css';
+@import './styles/blocks/testimonials.css';
+@import './styles/blocks/join.css';
+
 
 
 

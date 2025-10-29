@@ -49,3 +49,17 @@
     cursor: pointer;
   }
   .newsletter-card__btn:hover { filter: brightness(.95); }
+
+  .newsletter__btn {
+    background: #FFD050 !important;
+    color: #232536 !important;
+    border: none !important;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter .2s;
+  }
+  
+  .newsletter__btn:hover {
+    filter: brightness(0.95);
+  }
+  

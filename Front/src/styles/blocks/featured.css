@@ -37,3 +37,47 @@
 }
 
 .featured__btn { justify-self: start; }
+
+/* === FEATURED logos row full-width alignment === */
+
+.featured {
+  background: #fff;
+  padding-block: 80px;
+}
+
+/* снимаем ограничение по ширине */
+.featured .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-inline: 175px; /* чтобы совпадало с отступами авторов */
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.featured__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 64px;
+}
+
+.featured__logos img {
+  height: 32px;
+  width: auto;
+  display: block;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.featured__logos img:hover {
+  filter: none;
+  opacity: 1;
+}
+

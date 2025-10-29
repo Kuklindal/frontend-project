@@ -14,19 +14,30 @@
   <main id="main"></main>
   <div id="about"></div>
   <div id="categories"></div>
+  <div id="why"></div>
+  <div id="authors"></div>
+  <div id="featured"></div>
+  <div id="testimonials"></div>
+  <div id="join"></div>
   <div id="footer"></div>
 
   <script>
     async function load(id, file) {
-      const el = document.getElementById(id);
-      const res = await fetch(file);
-      el.innerHTML = await res.text();
+    const el = document.getElementById(id);
+    const res = await fetch(`${file}?v=${Date.now()}`); // кеш-бастинг
+    el.innerHTML = await res.text();
     }
     load('header', 'partials/header.html');
     load('main', 'partials/hero.html');
     load('footer', 'partials/footer.html');
     load('about', 'partials/about.html');
     load('categories', 'partials/categories.html');
+    load('why', 'partials/why.html');
+    load('authors', 'partials/authors.html');
+    load('featured', 'partials/featured.html');
+    load('testimonials', 'partials/testimonials.html');
+    load('join', 'partials/join.html');
+
   </script>
   <script type="module" src="/src/index.js"></script>
 </body>

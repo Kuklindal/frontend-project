@@ -1,0 +1,133 @@
+/* ===== Testimonials ===== */
+
+:root{
+    --testi-bg: #FBF6EA;                 /* бледный беж как в макете */
+    --testi-sep: rgba(35,37,54,.25);     /* вертикальная разделительная линия */
+    --testi-muted: #6D6E76;              /* приглушённый текст */
+    --testi-accent: #232536;             /* заголовки/акцентный */
+    --testi-btn-dark: #232536;           /* тёмная круглая кнопка */
+    --testi-btn-light: #ffffff;          /* светлая круглая кнопка */
+  }
+  
+  .testimonials{
+    padding-block: 72px;                 /* «воздух» вокруг блока */
+    background: var(--bg);               /* твой общий фон страницы */
+  }
+  
+  .testi{
+    background: var(--testi-bg);
+    padding: 72px;                       /* внутренние отступы «плашки» */
+    display: grid;
+    grid-template-columns: 1fr 1fr;      /* две равных колонки без медиазапросов */
+    column-gap: 72px;
+  }
+  
+  /* левая колонка */
+  .testi__left{
+    padding-right: 64px;
+    border-right: 1px solid var(--testi-sep);
+  }
+  
+  .testi__eyebrow{
+    margin: 0 0 16px 0;
+    letter-spacing: .2em;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--testi-muted);
+    text-transform: uppercase;
+  }
+  
+  .testi__title{
+    margin: 0 0 20px 0;
+    font-family: var(--font-head, "Inter", system-ui);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--testi-accent);
+    font-size: 48px;                     /* крупно, как в макете */
+  }
+  
+  .testi__lead{
+    margin: 0;
+    color: var(--testi-muted);
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  /* правая колонка */
+  .testi__right{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 48px;
+  }
+  
+  .testi__quote{
+    margin: 0;
+    color: var(--testi-accent);
+    font-weight: 700;
+    line-height: 1.35;
+    font-size: 26px;
+  }
+  
+  .testi__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  
+  .testi__author{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .testi__avatar{
+    display: block;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .testi__name{
+    font-weight: 700;
+    color: var(--testi-accent);
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
+  .testi__city{
+    color: var(--testi-muted);
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  
+  /* навигация */
+  .testi__nav{
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .testi__btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .testi__btn--prev{
+    background: var(--testi-btn-light);
+    color: var(--testi-accent);
+  }
+  
+  .testi__btn--next{
+    background: var(--testi-btn-dark);
+    color: #fff;
+  }
+  

@@ -1,0 +1,67 @@
+.authors {
+    padding-block: 120px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .authors__title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #232536;
+    margin-bottom: 72px;
+  }
+  
+  .authors__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  
+  .author {
+    background: #F4F4F4;
+    padding: 48px 24px;
+  }
+  
+  .author--active {
+    background: #FBF6EA; /* жёлтоватый фон, как в фигме */
+  }
+  
+  .author__photo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto 24px;
+    border-radius: 50%; /* только аватарка круглая */
+  }
+  
+  .author__name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #232536;
+    margin-bottom: 8px;
+  }
+  
+  .author__role {
+    font-size: 15px;
+    color: #6D6E76;
+    margin-bottom: 24px;
+  }
+  
+  .author__socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .author__socials img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  
+  .author__socials img:hover {
+    opacity: 0.6;
+  }
+  

@@ -1,0 +1,91 @@
+/* ===== WHY WE STARTED — чистая версия без теней и скруглений ===== */
+
+.why {
+  background: #fff;
+  padding-block-end: 50x !important; /* нижний отступ стал меньше */
+  padding-block-start: 50px !important; /* верхний можно оставить немного */
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: 70% 60%;   /* фото шире карточки */
+  align-items: end;                 /* нижние границы совпадают */
+  column-gap: 72px;
+  position: relative;
+}
+
+/* ===== Левая часть (фото) ===== */
+.why__media {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+}
+
+.why__media::after {
+  content: "";
+  position: absolute;
+  top: -90px;          /* фото выступает вверх */
+  right: -60px;
+  width: 280px;
+  height: 110px;
+ 
+  z-index: -1;
+}
+
+.why__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  transform: translateY(-50px);  /* верхняя часть фото выступает */
+  z-index: 1;                    /* фото под карточкой */
+}
+
+/* ===== Правая часть (карточка) ===== */
+.why-card {
+  position: relative;
+  background: #fff;
+  padding: 64px 72px;
+  max-inline-size: 620px;
+
+  /* наезд на фото */
+  transform: translateX(-300px);
+  z-index: 2;
+}
+
+/* ===== Текст ===== */
+.why-card__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #6D6E76;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.why-card__title {
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #232536;
+  margin-bottom: 24px;
+  max-width: 22ch;
+}
+
+.why-card__text {
+  color: #6D6E76;
+  font-size: 17px;
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+.why-card__btn {
+  display: inline-block;
+  font-weight: 700;
+  color: #232536;
+  background: #FFD050;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 32px;
+}
