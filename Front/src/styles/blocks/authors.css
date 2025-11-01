@@ -54,14 +54,14 @@
     gap: 16px;
   }
   
-  .author__socials img {
+  .author__socials-img {
     width: 20px;
     height: 20px;
     cursor: pointer;
     transition: opacity 0.2s ease;
   }
   
-  .author__socials img:hover {
+  .author__socials-img:hover {
     opacity: 0.6;
   }
   

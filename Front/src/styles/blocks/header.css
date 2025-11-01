@@ -22,12 +22,12 @@
 
 
 
-.header .button {
+.header__button {
   display: inline-flex; align-items: center; justify-content: center;
   height: 44px; padding-inline: 28px; border-radius: 6px;
   border: 1px solid var(--header-btn-border); font-weight: 600; line-height: 1;
 }
-.header .button--light { background: var(--header-btn-bg); color: var(--header-btn-fg); }
+.header__button--light { background: var(--header-btn-bg); color: var(--header-btn-fg); }
 .header__logo-text {
   font-family: var(--font-head);  
   font-weight: 700;

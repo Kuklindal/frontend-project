@@ -1,11 +1,4 @@
-.cat-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 28px;
-  padding-inline: 24px;
-  max-width: 1200px;
-  margin-inline: auto;
-}
+
 
 .cat-card {
   background: var(--cat-bg);
@@ -34,7 +27,7 @@
   margin-bottom: 18px;
 }
 
-.cat-card__icon img {
+.cat-card__icon-img {
   width: 28px;
   height: 28px;
   display: block;

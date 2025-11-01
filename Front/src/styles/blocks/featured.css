@@ -45,19 +45,7 @@
   padding-block: 80px;
 }
 
-/* снимаем ограничение по ширине */
-.featured .container {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding-inline: 175px; /* чтобы совпадало с отступами авторов */
-  box-sizing: border-box;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 64px;
-}
 
 .featured__logos {
   display: flex;
@@ -67,7 +55,7 @@
   gap: 64px;
 }
 
-.featured__logos img {
+.featured__logos-img {
   height: 32px;
   width: auto;
   display: block;
@@ -76,8 +64,24 @@
   transition: opacity 0.2s ease, filter 0.2s ease;
 }
 
-.featured__logos img:hover {
+.featured__logos-img:hover {
   filter: none;
   opacity: 1;
 }
+
+.featured__cta {
+  margin-top: 12px;
+  height: 48px;
+  padding: 0 22px;
+  background: var(--accent-yellow, #ffd050);
+  color: #232536;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  display: inline-flex;   /* чтобы была «как кнопка» */
+  width: auto;            /* не растягивать */
+  justify-self: start;    /* не тянуться в гриде */
+  align-self: start;   
+}
+
 

@@ -50,6 +50,7 @@
   }
   .newsletter-card__btn:hover { filter: brightness(.95); }
 
+  /*  */
   .newsletter__btn {
     background: #FFD050 !important;
     color: #232536 !important;
