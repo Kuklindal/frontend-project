@@ -27,3 +27,8 @@
   line-height: 1.4;
 }
 
+.allposts__meta__author {
+  color: var(--link, #592EA9);      /* фиолет из макета */
+  text-decoration: none;
+
+}

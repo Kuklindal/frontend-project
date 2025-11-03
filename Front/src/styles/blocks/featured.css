@@ -1,5 +1,5 @@
 .featured {
-  background: var(--card-bg);
+  background: var(--bg);
   border: 1px solid var(--card-border);
   border-radius: 12px;
   overflow: hidden;
@@ -15,10 +15,11 @@
 .featured__body {
   display: grid;
   gap: 14px;
+  justify-items: start;   
 }
 
 .featured__meta {
-  color: var(--text-muted);
+  color: var(--link, #592EA9);      
   font-size: 14px;
 }
 
@@ -37,15 +38,6 @@
 }
 
 .featured__btn { justify-self: start; }
-
-/* === FEATURED logos row full-width alignment === */
-
-.featured {
-  background: #fff;
-  padding-block: 80px;
-}
-
-
 
 .featured__logos {
   display: flex;
@@ -70,18 +62,17 @@
 }
 
 .featured__cta {
-  margin-top: 12px;
-  height: 48px;
-  padding: 0 22px;
-  background: var(--accent-yellow, #ffd050);
-  color: #232536;
-  border: none;
-  border-radius: 2px;
-  font-weight: 700;
-  display: inline-flex;   /* чтобы была «как кнопка» */
-  width: auto;            /* не растягивать */
-  justify-self: start;    /* не тянуться в гриде */
-  align-self: start;   
+  margin-top:32px;                   
+  height:56px;                        
+  padding:0 32px;                   
+  display:inline-flex;
+  align-items:center;
+  background:#FFD050;            
+  color:#232536;
+  border:1px solid rgba(0,0,0,.08);   
+  border-radius:8px;                   
+  font-weight:700;
+  cursor:pointer; 
 }
 
 

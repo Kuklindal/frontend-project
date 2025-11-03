@@ -3,11 +3,13 @@ html[data-theme="light"] {
 
   --bg: var(--color-white);
   --text: var(--slate-900);
-  --about-bg: var(--about-bg-light);
+  --second-bg: var(--about-bg-light);
     /* токены для блока */
   --cat-bg: var(--cat-bg-light);
   --cat-border: var(--cat-border-light);
   --cat-border-hover: var(--cat-border-hover-light);
   --cat-title: var(--cat-title-light);
   --cat-text: var(--cat-text-light);
+  --testi-bg: var(--testi-bg-light);
+  --testi-btn: var(--testi-btn-light);
 }

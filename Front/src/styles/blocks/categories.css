@@ -10,7 +10,7 @@
   text-align: center;
   color: var(--cat-title);
   padding-inline: 16px;
-  margin-bottom: 40px; /* только внутренние отступы секции; наружных margin нет */
+  margin-bottom: 40px; 
 }
 
 .categories__grid {

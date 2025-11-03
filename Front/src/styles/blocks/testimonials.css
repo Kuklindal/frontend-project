@@ -1,28 +1,15 @@
-/* ===== Testimonials ===== */
-
-:root{
-  --testi-bg: #FBF6EA;                 /* бледный беж как в макете */
-  --testi-sep: rgba(35,37,54,.25);     /* вертикальная разделительная линия */
-  --testi-muted: #6D6E76;              /* приглушённый текст */
-  --testi-accent: #232536;             /* заголовки/акцентный */
-  --testi-btn-dark: #232536;           /* тёмная круглая кнопка */
-  --testi-btn-light: #ffffff;          /* светлая круглая кнопка */
-}
-
 .testimonials{
-  padding-block: 72px;                 /* «воздух» вокруг блока */
-  background: var(--bg);               /* твой общий фон страницы */
+  padding-block: 72px;  
 }
 
 .testimonials__wrapper{
   background: var(--testi-bg);
-  padding: 72px;                       /* внутренние отступы «плашки» */
+  padding: 72px;                       
   display: grid;
-  grid-template-columns: 1fr 1fr;      /* две равных колонки без медиазапросов */
+  grid-template-columns: 1fr 1fr;      
   column-gap: 72px;
 }
 
-/* левая колонка */
 .testimonials__left{
   padding-right: 64px;
   border-right: 1px solid var(--testi-sep);
@@ -42,18 +29,16 @@
   font-family: var(--font-head, "Inter", system-ui);
   font-weight: 700;
   line-height: 1.15;
-  color: var(--testi-accent);
-  font-size: 48px;                     /* крупно, как в макете */
+  color: var(--text);
+  font-size: 48px;                     
 }
 
 .testimonials__lead{
-  margin: 0;
   color: var(--testi-muted);
   line-height: 1.6;
   font-size: 18px;
 }
 
-/* правая колонка */
 .testimonials__right{
   display: grid;
   grid-template-rows: auto 1fr;
@@ -61,8 +46,7 @@
 }
 
 .testimonials__quote{
-  margin: 0;
-  color: var(--testi-accent);
+  color: var(--text);
   font-weight: 700;
   line-height: 1.35;
   font-size: 26px;
@@ -92,7 +76,7 @@
 
 .testimonials__name{
   font-weight: 700;
-  color: var(--testi-accent);
+  color: var(--text);
   font-size: 20px;
   line-height: 1.2;
 }
@@ -103,7 +87,6 @@
   line-height: 1.2;
 }
 
-/* навигация */
 .testimonials__nav{
   display: inline-flex;
   align-items: center;
@@ -123,7 +106,7 @@
 
 .testimonials__btn--prev{
   background: var(--testi-btn-light);
-  color: var(--testi-accent);
+  color: #000000;
 }
 
 .testimonials__btn--next{

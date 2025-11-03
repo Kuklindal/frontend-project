@@ -1,13 +1,6 @@
-/* ===== Join CTA ===== */
-:root{
-    --join-title: #232536;
-    --join-text:  #6D6E76;
-    --join-yellow:#FFD050;   /* тот же жёлтый, что и в остальных местах */
-  }
-  
   .join{
-    padding-block: 88px;                 /* воздух сверху/снизу */
-    background: var(--bg);               /* общий фон страницы */
+    padding-block: 88px;                 
+    background: var(--bg);              
   }
   
   .join__inner{
@@ -16,7 +9,7 @@
   
   .join__title{
     margin: 0 0 20px 0;
-    color: var(--join-title);
+    color: var(--text);
     font-weight: 700;
     line-height: 1.15;
     font-size: 48px;

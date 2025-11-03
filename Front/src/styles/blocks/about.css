@@ -1,11 +1,10 @@
 .about {
   position: relative;
-  background-color: var(--about-bg);
+  background-color: var(--second-bg);
   padding-block: 96px;
   overflow: hidden;
 }
 
-/* верхняя полоска по центру */
 .about::before {
   content: "";
   position: absolute;

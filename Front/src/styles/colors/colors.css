@@ -11,25 +11,35 @@
 
   --indigo-900: #23283B;
   --about-bg-light: #F4F0FF;
-  --about-bg-dark: #111827;
+  --second-bg-dark: #111827;
   --cat-accent: #FFD050;
-  --cat-accent-text: #0b0f1a;      /* текст на жёлтом */
+  --cat-accent-text: #0b0f1a;      
 
-  /* Light theme base values */
+
   --cat-bg-light: #ffffff;
   --cat-border-light: #e5e7eb;
   --cat-border-hover-light: #d1d5db;
   --cat-title-light: #0f172a;
   --cat-text-light: #6b7280;
-  --cat-icon-bg-light: #FFF4D6;    /* кремовый квадрат под иконкой */
+  --cat-icon-bg-light: #FFF4D6;    
   --cat-icon-bg-accent-light: #FFE9B0;
 
-  /* Dark theme base values */
-  --cat-bg-dark: #0f172a;          /* тёмная карточка */
+  --cat-bg-dark: #0f172a;          
   --cat-border-dark: #1f2937;
   --cat-border-hover-dark: #334155;
   --cat-title-dark: #e5e7eb;
   --cat-text-dark: #94a3b8;
-  --cat-icon-bg-dark: #2b2a20;     /* тёплый тёмный фон под иконкой */
+  --cat-icon-bg-dark: #2b2a20;     
   --cat-icon-bg-accent-dark: #3b2f0b;
+
+  --testi-bg-light: #FBF6EA;
+  --testi-bg-dark: var(--second-bg-dark);   
+  --testi-sep: rgba(35,37,54,.25);     
+  --testi-muted: #6D6E76;                        
+  --testi-btn-dark: #232536;           
+  --testi-btn-light: #ffffff;     
+    
+  --join-title: #232536;
+  --join-text:  #6D6E76;
+  --join-yellow:#FFD050;   
 }

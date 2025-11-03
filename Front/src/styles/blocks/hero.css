@@ -1,10 +1,8 @@
-/* ===== Hero ===== */
-.hero {
+  .hero {
     position: relative;
-    isolation: isolate;               /* чтобы overlay не выползал наружу */
-    min-height: var(--hero-h, 580px); /* высота блока на десктопе */
+    isolation: isolate;               
     color: #fff;
-    background: #000;                 /* на случай, если картинка не загрузится */
+    background: #000;                 
   }
   
   .hero__bg {
@@ -12,14 +10,14 @@
     inset: 0;
     z-index: -2;
     overflow: hidden;
-    border-bottom: 1px solid rgba(255,255,255,.08); /* лёгкая линия как в макете */
+    border-bottom: 1px solid rgba(255,255,255,.08); 
   }
   
   .hero__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1.02);           /* лёгкое увеличение, чтобы не было пустот */
+    transform: scale(1.02);          
     filter: saturate(0.95);
   }
   
@@ -27,7 +25,6 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    /* затемняющий градиент слева чуть плотнее, справа мягче */
     background:
       linear-gradient(90deg,
         rgba(0,0,0,.62) 0%,
@@ -36,15 +33,14 @@
         rgba(0,0,0,.18) 100%);
   }
   
-  /* содержимое */
   .hero__inner {
     display: grid;
     gap: 18px;
-    padding-top: 84px;     /* отступы сверху/снизу как в макете */
+    padding-top: 84px;     
     padding-bottom: 84px;
+    justify-items: start;  
   }
   
-  /* бейдж */
   .hero__badge {
     margin: 0;
     letter-spacing: .14em;
@@ -54,10 +50,9 @@
     color: rgba(255,255,255,.85);
   }
   .hero__badge-accent {
-    color: var(--accent-yellow, #ffd050); /* «STARTUP» жёлтым */
+    color: var(--accent-yellow, #ffd050);
   }
   
-  /* заголовок */
   .hero__title {
     margin: 0;
     font-family: var(--font-head);
@@ -66,7 +61,6 @@
     line-height: 1.1;
   }
   
-  /* автор / дата */
   .hero__meta {
     margin: 4px 0 0;
     color: rgba(255,255,255,.85);
@@ -80,7 +74,6 @@
   .hero__author:hover { text-decoration: underline; }
   .hero__dot { padding: 0 10px; opacity: .7; }
   
-  /* описание */
   .hero__desc {
     margin: 0;
     max-width: 720px;
@@ -89,39 +82,16 @@
     line-height: 1.6;
   }
   
-  /* кнопка */
-  .hero__cta {
-    margin-top: 12px;
-    height: 48px;
-    padding: 0 22px;
-    background: var(--accent-yellow, #ffd050);
-    color: #232536;
-    border: none;
-    border-radius: 2px;
-    font-weight: 700;
-  }
-  
-  /* адаптив
-  @media (max-width: 1024px) {
-    .hero { min-height: 520px; }
-    .hero__inner { padding-top: 64px; padding-bottom: 64px; }
-    .hero__desc { max-width: 640px; }
-  }
-  @media (max-width: 640px) {
-    .hero { min-height: 480px; }
-    .hero__inner { padding-top: 44px; padding-bottom: 44px; gap: 16px; }
-    .hero__title { font-size: clamp(28px, 8vw, 38px); }
-  } */
-
-  /* чтобы все элементы в hero не растягивались по ширине */
-.hero__inner {
-    justify-items: start;   /* ключевая строка */
-  }
-  
-  /* а для кнопки — явно зафиксировать поведение */
-  .hero__cta {
-    display: inline-flex;   /* чтобы была «как кнопка» */
-    width: auto;            /* не растягивать */
-    justify-self: start;    /* не тянуться в гриде */
-    align-self: start;      /* на всякий случай */
-  }
+  .hero__cta{
+  margin-top:32px;                   
+  height:56px;                        
+  padding:0 32px;                   
+  display:inline-flex;
+  align-items:center;
+  background:#FFD050;            
+  color:#232536;
+  border:1px solid rgba(0,0,0,.08);   
+  border-radius:8px;                   
+  font-weight:700;
+  cursor:pointer;
+}

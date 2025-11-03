@@ -8,7 +8,6 @@
 @import './styles/components/container.css';
 @import './styles/global/utility.css';
 
-@import './styles/blocks/button.css';
 @import './styles/blocks/nav.css';
 @import './styles/blocks/featured.css';
 @import './styles/blocks/allposts.css';

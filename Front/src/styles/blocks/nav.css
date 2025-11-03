@@ -1,6 +1,6 @@
 .nav__list {
   display: flex;
-  gap: 30px;        /* интервалы между пунктами, как в макете */   /* НИКАКИХ padding-inline здесь не нужно */
+  gap: 30px;        
   list-style: none;
 }
 .nav__link {

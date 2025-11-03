@@ -1,17 +1,16 @@
 .footer {
     background: var(--footer-bg);
     color: var(--footer-fg);
-    padding: 64px 0 48px;            /* как в макете: воздуха сверху/снизу */
+    padding: 64px 0 48px;           
   }
   
-  /* ===== Верхняя зона ===== */
   .footer__top {
     display: grid;
-    grid-template-rows: auto auto;   /* 1) head, 2) card */
-    gap: 32px;                       /* расстояние между head и карточкой */
+    grid-template-rows: auto auto;  
+    gap: 32px;                    
   }
   
-  /* Ряд 1: логотип слева, меню справа, по одной линии */
+
   .footer__head {
     display: flex;
     align-items: center;
@@ -28,7 +27,7 @@
   
   .footer__menu {
     display: flex;
-    gap: 28px;                       /* в макете ссылки «дышат» */
+    gap: 28px;                       
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -41,9 +40,7 @@
   }
   .footer__menu-link:hover { color: var(--footer-fg); }
   
-  /* Ряд 2: карточка подписки — на всю ширину контейнера */
 
-  /* ===== Низ ===== */
   .footer__bottom {
     margin-top: 40px;
     border-top: 1px solid var(--footer-sep);
@@ -54,37 +51,11 @@
     gap: 24px;
     flex-wrap: wrap;
   }
-  .footer__info p {
-    margin: 6px 0;
+  .footer__info {
     color: var(--footer-muted);
     font-size: 16px;
   }
 
-  
-  /* ===== Адаптив =====
-  @media (max-width: 1024px) {
-    .newsletter-card { padding: 36px; }
-    .newsletter-card__title { font-size: 28px; }
-  }
-  @media (max-width: 640px) {
-    .footer__head { flex-direction: column; align-items: flex-start; gap: 16px; }
-    .newsletter-card__form { grid-template-columns: 1fr; }
-    .newsletter-card__btn { width: 100%; }
-  } */
-
-
-  /* .footer .social__link:hover .social__icon{ fill: #FFD050; } */
-  
-  /* адаптив */
-  /* @media (max-width: 1024px){
-    .footer .newsletter-card{ width: 100%; padding: 36px; }
-    .footer .newsletter-card__grid{ grid-template-columns: 1fr; row-gap: 20px; }
-    .footer .newsletter-card__title{ max-width: none; font-size: 28px; }
-  }
-  @media (max-width: 560px){
-    .footer .newsletter-card__form{ grid-template-columns: 1fr; }
-    .footer .newsletter-card__btn{ width: 100%; }
-  } */
  
 
   

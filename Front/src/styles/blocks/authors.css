@@ -1,13 +1,13 @@
 .authors {
     padding-block: 120px;
-    background: #fff;
+    background: var(--bg);
     text-align: center;
   }
   
   .authors__title {
     font-size: 36px;
     font-weight: 800;
-    color: #232536;
+    color: var(--text);
     margin-bottom: 72px;
   }
   
@@ -17,51 +17,51 @@
     gap: 32px;
   }
   
-  .author {
+  .authors__person {
     background: #F4F4F4;
     padding: 48px 24px;
   }
   
-  .author--active {
-    background: #FBF6EA; /* жёлтоватый фон, как в фигме */
+  .authors__person--active {
+    background: #FBF6EA; 
   }
   
-  .author__photo {
+  .authors__person__photo {
     display: block;
     width: 120px;
     height: 120px;
     object-fit: cover;
     margin: 0 auto 24px;
-    border-radius: 50%; /* только аватарка круглая */
+    border-radius: 50%;
   }
   
-  .author__name {
+  .authors__person__name {
     font-size: 20px;
     font-weight: 700;
     color: #232536;
     margin-bottom: 8px;
   }
   
-  .author__role {
+  .authors__person__role {
     font-size: 15px;
     color: #6D6E76;
     margin-bottom: 24px;
   }
   
-  .author__socials {
+  .authors__person__socials {
     display: flex;
     justify-content: center;
     gap: 16px;
   }
   
-  .author__socials-img {
+  .authors__person__socials-img {
     width: 20px;
     height: 20px;
     cursor: pointer;
     transition: opacity 0.2s ease;
   }
   
-  .author__socials-img:hover {
+  .authors__person__socials-img:hover {
     opacity: 0.6;
   }
   

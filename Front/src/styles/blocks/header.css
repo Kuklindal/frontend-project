@@ -1,5 +1,4 @@
 .header {
-  width: 100%;
   background: var(--header-bg);
   border-bottom: 1px solid var(--header-border);
   box-shadow: var(--header-shadow);
@@ -7,25 +6,22 @@
 
 .header__inner {
   display: grid;
-  grid-template-columns: auto 1fr auto; /* слева – центр – справа */
+  grid-template-columns: auto 1fr auto; 
   align-items: center;
   height: 80px;
-  padding-inline: 32px;  /* без margin, только внутренние отступы */
+  padding-inline: 32px;  
   column-gap: 32px;
   box-sizing: border-box;
-  width: 100%;
 }
 
 .header__logo   { justify-self: start;  display: flex; align-items: center; gap: 8px; }
 .header__nav    { justify-self: end;}
-.header__action { justify-self: end;    display: flex; align-items: center; gap: 16px; } /* расстояние между кнопками */
-
-
+.header__action { justify-self: end;    display: flex; align-items: center; gap: 16px; } 
 
 .header__button {
-  display: inline-flex; align-items: center; justify-content: center;
-  height: 44px; padding-inline: 28px; border-radius: 6px;
-  border: 1px solid var(--header-btn-border); font-weight: 600; line-height: 1;
+  display:inline-flex; align-items:center; justify-content:center;
+  height:56px; padding:0 28px; border-radius:6px; border:1px solid transparent;
+  background:transparent; color:var(--header-fg); font-weight:700; cursor:pointer;
 }
 .header__button--light { background: var(--header-btn-bg); color: var(--header-btn-fg); }
 .header__logo-text {

@@ -1,15 +1,13 @@
 .social { display: flex; gap: 18px; }
 .social__link { display: inline-flex; opacity: .85; }
 .social__link:hover { opacity: 1; }
-.social__icon { width: 20px; height: 20px; fill: var(--footer-muted); }
+
 
 .social__icon {
     width: 20px;
     height: 20px;
     fill: var(--footer-icon);
     transition: fill .2s;
+    background-color: rgb(126, 126, 126);
   }
   
-  .social__link:hover .social__icon {
-    fill: #FFD050;          /* при наведении — жёлтый акцент */
-  }

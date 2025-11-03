@@ -1,20 +1,17 @@
-/* ===== WHY WE STARTED — чистая версия без теней и скруглений ===== */
-
 .why {
-  background: #fff;
-  padding-block-end: 50x !important; /* нижний отступ стал меньше */
-  padding-block-start: 50px !important; /* верхний можно оставить немного */
+  background: var(--second-bg);
+  padding-block-end: 50px; 
+  padding-block-start: 50px; 
 }
 
 .why__grid {
   display: grid;
-  grid-template-columns: 70% 60%;   /* фото шире карточки */
-  align-items: end;                 /* нижние границы совпадают */
+  grid-template-columns: 70% 60%;   
+  align-items: end;                
   column-gap: 72px;
   position: relative;
 }
 
-/* ===== Левая часть (фото) ===== */
 .why__media {
   position: relative;
   isolation: isolate;
@@ -24,7 +21,7 @@
 .why__media::after {
   content: "";
   position: absolute;
-  top: -90px;          /* фото выступает вверх */
+  top: -90px;          
   right: -60px;
   width: 280px;
   height: 110px;
@@ -36,23 +33,19 @@
   display: block;
   width: 100%;
   object-fit: cover;
-  transform: translateY(-50px);  /* верхняя часть фото выступает */
-  z-index: 1;                    /* фото под карточкой */
+  transform: translateY(-50px);  
+  z-index: 1;                    
 }
 
-/* ===== Правая часть (карточка) ===== */
 .why-card {
   position: relative;
   background: #fff;
   padding: 64px 72px;
   max-inline-size: 620px;
-
-  /* наезд на фото */
   transform: translateX(-300px);
   z-index: 2;
 }
 
-/* ===== Текст ===== */
 .why-card__eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.15em;
